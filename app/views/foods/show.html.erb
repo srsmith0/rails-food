@@ -1,0 +1,10 @@
+<h1><%= @food.name %></h1>
+Price:$<%= @food.price %>
+<%= link_to "Delete", food_path(@food), method: :delete %>
+
+<br />
+<%= link_to "Edit Name/Price", edit_food_path(@food.id) %>
+
+<br />
+
+<%= link_to "Back", foods_path %>

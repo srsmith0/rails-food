@@ -1,0 +1,13 @@
+<h1>Add Food</h1>
+<%= form_with(model: @food, local: true) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true, placeholder: "Name" %>
+
+
+  <div class="field">
+    <%= f.label :price %>
+    <%= f.number_field :price %>
+  </div>
+  <%= f.submit %>
+<% end %>
